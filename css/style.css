@@ -1,0 +1,440 @@
+body {
+    box-sizing: border-box;
+    scroll-behavior: unset !important;
+}
+
+html {
+    scroll-behavior: unset !important;
+}
+nav {
+    background-color: #F8F9FA;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.active {
+    color: orange !important;
+}
+.homeSection {
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.homeLayer {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+h1 {
+    font-size: 60px; 
+    font-weight: 800;
+}
+.changer {
+    font-size: 80px;
+    font-weight: lighter;
+}
+.changer::after {
+    content: "";
+    font-size: 80px;
+    font-weight: 500;
+    animation: typingChanger 5s alternate infinite;
+}
+@keyframes typingChanger {
+    0% {
+        content: " Larry Daniels|";
+    }
+    12.8% {
+        content: " Larry Daniels|";
+    }
+    12.9% {
+        content: " Larry Daniel|";
+    }
+    13% {
+        content: " Larry Danie|";
+    }
+    14.5% {
+        content: " Larry Dani|";
+    }
+    16% {
+        content: " Larry Dan|";
+    }
+    17.5% {
+        content: " Larry Da|";
+    }
+    19% {
+        content: " Larry D|";
+    }
+    20.5% {
+        content: " Larry |";
+    }
+    22% {
+        content: " Larry|";
+    }
+    23.5% {
+        content: " Larr|";
+    }
+    25% {
+        content: " Lar|";
+    }
+    26.5% {
+        content: " La|";
+    }
+    28% {
+        content: " L|";
+    }
+    29.5% {
+        content: " |";
+    }
+    31% {
+        content: " D|";
+    }
+    32.5% {
+        content: " De|";
+    }
+    34% {
+        content: " Dev|";
+    }
+    35.5% {
+        content: " Deve|";
+    }
+    37% {
+        content: " Devel|";
+    }
+    38.5% {
+        content: " Develo|";
+    }
+    40% {
+        content: " Develop|";
+    }
+    41.5% {
+        content: " Develope|";
+    }
+    43% {
+        content: " Developer|";
+    }
+    54.4% {
+        content: " Developer|";
+    }
+    54.5% {
+        content: " Develope|";
+    }
+    56% {
+        content: " Develop|";
+    }
+    57.5% {
+        content: " Develo|";
+    }
+    59% {
+        content: " Devel|";
+    }
+    60.5% {
+        content: " Deve|";
+    }
+    62% {
+        content: " Dev|";
+    }
+    63.5% {
+        content: " De|";
+    }
+    65% {
+        content: " D|";
+    }
+    66.5% {
+        content: " |";
+    }
+    68% {
+        content: " D|";
+    }
+    69.5% {
+        content: " De|";
+    }
+    71% {
+        content: " Des|";
+    }
+    72.5% {
+        content: " Desi|";
+    }
+    74% {
+        content: " Desig|";
+    }
+    75.5% {
+        content: " Design|";
+    }
+    77% {
+        content: " Designe|";
+    }
+    78.5% {
+        content: " Designer|";
+    }
+    100% {
+        content: " Designer|";
+    }
+}
+.homeIcon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #071015;
+    border-radius: 50%;
+    margin: 5px;
+}
+.figImg {
+    position: relative;
+}
+.figImg:after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/dots.png");
+    background-repeat: repeat;
+    width: 80%;
+    height: 80%;
+    bottom: -30px;
+    left: 30px;
+    z-index: -1;
+}
+.progress-bar {
+    transition: all 2s !important;
+}
+.btns a {
+    padding: 10px 50px;
+    border-radius: 10px;
+}   
+.btn1 {
+    background-color: black;
+    color: white;
+    border: 0.5px solid transparent;
+}
+.btn1:hover {
+    background-color: white;
+    color: black;
+    border: 0.5px solid black;
+    transition: all .5s;
+}
+.btn2 {
+    background-color: white;
+    color: black;
+    border: 0.5px solid black;
+}
+.btn2:hover {
+    background-color: black;
+    color: white;
+    border: 0.5px solid black;
+    transition: all .5s;
+}
+.servIcon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    border-radius: 50%;
+    margin: auto;
+}
+.servContent:hover .servIcon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.services h2 {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.services h2:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 30px;
+    z-index: -1;
+    left: 0;
+    bottom: -10px;
+    background-image: url("../images/dots.png");
+    background-repeat: repeat;
+}
+.portofolio h2 {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.portofolio h2:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 30px;
+    z-index: -1;
+    left: 0;
+    bottom: -10px;
+    background-image: url("../images/dots.png") ;
+    background-repeat: repeat;
+}
+.portofolio figcaption {
+    content: "";
+    top:5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background-color: white;
+}
+.figIcon i {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    margin: 5px;
+    border-radius: 50%;
+}
+.figIcon i:hover {
+    background-color: white;
+    color: black;
+    border: black 1px solid;
+    transition: all 0.5s;
+}
+.portContent figcaption {
+    opacity: 0;
+    transform: translateY(5%);
+}
+.portContent figure:hover figcaption{
+    opacity: 1;
+    transition: all 0.5s ;
+    transform: translateY(0);
+}
+.portofolio h5 {
+    color: black;
+}
+.clints h2 {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.clints h2:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 30px;
+    z-index: -1;
+    left: 0;
+    bottom: -10px;
+    background-image: url("../images/dots.png") ;
+    background-repeat: repeat;
+}
+.clints .active {
+    color: black !important;
+}
+.clints .carousel-indicators {
+    top: 100%;
+}
+.clints .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px ;
+    background-color: #869791;
+    border-radius: 50%;
+}
+.blog h2 {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.blog h2:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 30px;
+    z-index: -1;
+    left: 0;
+    bottom: -10px;
+    background-image: url("../images/dots.png") ;
+    background-repeat: repeat;
+}
+.blog .active {
+    color: black !important;
+}
+.blog .carousel-indicators {
+    top: 105%;
+}
+.blog .carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px ;
+    background-color: black;
+    border-radius: 50%;
+}
+.cardImg img:hover {
+    transition: 1s all ease-in;
+    transform: scale(1.4 , 1.4 );
+}
+.contact h2 {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.contact h2:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 30px;
+    z-index: -1;
+    left: 0;
+    bottom: -10px;
+    background-image: url("../images/dots.png") ;
+    background-repeat: repeat;
+}
+.headContact .headIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #f0eeee;
+    border-radius: 50%;
+}
+.headContact:hover .headIcon {
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+}
+form input , textarea {
+    border-radius: 5px;
+}
+.formbtn {
+    padding: 5px 35px;
+    background-color: black;
+    color: white;
+    border: 1px solid transparent;
+}
+.formbtn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black !important;
+    transition: all 0.5s;
+}
+footer p {
+    color: #4B5A55;
+}
+.toTop  {
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    color: white ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    display: none;
+}
